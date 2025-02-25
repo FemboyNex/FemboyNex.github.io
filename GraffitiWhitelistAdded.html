@@ -16,12 +16,9 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
+        h1, p {
+            animation: float 3s ease-in-out infinite;
+            text-shadow: 0 0 10px #ff66c4, 0 0 20px #ff66c4, 0 0 30px #ff66c4;
         }
         a {
             color: #ff66c4;
@@ -30,6 +27,11 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
         }
     </style>
 </head>
